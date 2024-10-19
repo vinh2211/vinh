@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Chúc Mừng 20/10</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #ffe6f2; /* Màu hồng nhạt */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden; /* Giúp các hình ảnh trang trí không bị ra ngoài card */
+            z-index: 1; /* Đảm bảo card nằm dưới hình ảnh */
+        }
+
+        h1 {
+            color: #ff4081; /* Màu hồng đậm */
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        .gift-link {
+            text-decoration: none;
+            background-color: #ff4081; /* Màu nút quà tặng */
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 18px;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .gift-link:hover {
+            
+            z-index: 0;
+        }
+
+        /* Hình ảnh trang trí xung quanh */
+        .decorative-image {
+            position: absolute;
+            width: 120px; /* Kích thước hình ảnh lớn hơn */
+            height: 120px; /* Kích thước hình ảnh lớn hơn */
+            object-fit: cover;
+            opacity: 0.9;
+            transition: transform 0.5s ease;
+            z-index: 1; /* Đảm bảo hình ảnh nằm trên nội dung */
+        }
+
+        .decorative-image:hover {
+            transform: scale(1.1); /* Hiệu ứng phóng to nhẹ khi hover */
+        }
+
+        .decorative-image:nth-child(1) {
+            top: -50px;
+            left: -50px;
+            transform: rotate(-10deg);
+        }
+
+        .decorative-image:nth-child(2) {
+            top: -50px;
+            right: -50px;
+            transform: rotate(15deg);
+        }
+
+        .decorative-image:nth-child(3) {
+            bottom: -50px;
+            left: -50px;
+            transform: rotate(10deg);
+        }
+
+        .decorative-image:nth-child(4) {
+            bottom: -50px;
+            right: -50px;
+            transform: rotate(-15deg);
+        }
+
+        /* Viền màu sắc xung quanh card */
+        .border {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(135deg, #ff6f61, #ff4081);
+            z-index: 0; /* Viền nằm dưới card */
+            border-radius: 20px;
+            filter: blur(10px); /* Làm mờ viền */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="border"></div> <!-- Viền màu sắc xung quanh -->
+    <div class="card">
+       
+
+        <h1>Gửi Em Yêu,</h1>
+        <p>Nhân ngày 20/10, anh gửi đến em lời chúc chân thành và tốt đẹp nhất!</p>
+        <p>Em là người luôn mang đến niềm vui, sự ấm áp, và ánh sáng vào cuộc đời anh. Mong em luôn xinh đẹp, hạnh phúc và thành công trên mọi con đường em chọn!</p>
+        <p>Chúc em một ngày 20/10 tràn đầy niềm vui và ý nghĩa! 🌸</p>
+        <p><strong>Với tất cả yêu thương, từ lập trình viên của trái tim em ❤️</strong></p>
+
+        <a href="https://www.tiktok.com/@leanhthu12062004/video/7048910211981069570?is_from_webapp=1&sender_device=pc" target="_blank" class="gift-link">Nhấn vào đây để nhận quà</a>
+        
+    </div>
+</body>
+</html>
